@@ -14,15 +14,16 @@ body {
     display: grid;
     grid-template-areas:
         "header header header header"
-        "nav nav nav nav"
         "main main main aside"
         "footer footer footer footer";
-    grid-template-rows: 0.3fr auto 1fr 0.4fr;
+    grid-template-rows: auto 1fr 0.4fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     min-height: 100vh;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     grid-area: header;
     background-color: #333;
     color: white;
@@ -30,6 +31,7 @@ header {
 
 header h2 {
     padding: 20px;
+    height: 130px;
 }
 
 nav {

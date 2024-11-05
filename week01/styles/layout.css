@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main aside"
+        "footer footer footer footer";
+    grid-template-rows: 0.3fr auto 1fr 0.4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+header h2 {
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: black;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border-bottom: 2px solid #a7a7a7;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+main {
+    grid-area: main;
+    padding: 2rem;
+    background-color: #ddd;
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+    padding: 2rem;
+    border-left: 2px solid #a7a7a7;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    padding-top: 20px;
+}

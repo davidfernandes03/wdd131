@@ -6,6 +6,11 @@
     <title>WDD 131 - Dynamic Web Fundamentals - David Fernandes</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes | My own Introductory page featuring personal information, links to LinkedIn, I-Learn, a favorite scripture, and an upcoming project. Explore to learn more about my home country and my interests.">
     <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Links to API and CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
@@ -30,16 +35,16 @@
                         <p>
                             My name is David Fernandes. I was born in Brazil and am currently living in Englang. I am currently studying Web Development at BYU-Idaho, and I experience working with tools like Python, C#, TypeScript and JavaScript. I enjoy listening to music while studying and spending time with family and friends.
                         </p>
-                        <figure>
-                            <img src="images/myself.jpeg" alt="" width="150px" height="180px">
+                        <figure id="person">
+                            <img src="images/myself.jpeg" alt="Image of myself">
                         </figure>                        
                     </div>
 
                     <h3>São Paulo, Brazil</h3>
 
                     <div class="country">
-                        <figure>
-                            <img src="images/brazil.jpg" alt="" width="160px" height="100px">
+                        <figure id="flag">
+                            <img src="images/brazil.jpg" alt="Image of Brazil's flag">
                             <figcaption>Official Flag of Brazil</figcaption>
                         </figure>
                         <p>
@@ -70,6 +75,6 @@
         </footer>
     </div>
 
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

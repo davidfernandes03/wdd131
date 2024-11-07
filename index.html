@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - David Fernandes</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes | My own Introductory page featuring personal information, links to LinkedIn, I-Learn, a favorite scripture, and an upcoming project. Explore to learn more about my home country and my interests.">
+    <meta name="author" content="David da Rocha Fernandes">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>WDD 131 = Blazzard</h1>
+    <div class="container">
+        <header>
+            <h1>
+                WDD 131: Dynamic Web Fundamentals - <strong>David R. Fernandes</strong>
+            </h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/david-fernandes-853277288/" target="_blank">LinkedIn</a>
+                <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng" target="_blank">Scripture</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="content">
+                    <div class="about">
+                        <p>
+                            My name is David Fernandes. I was born in Brazil and am currently living in Englang. I am currently studying Web Development at BYU-Idaho, and I experience working with tools like Python, C#, TypeScript and JavaScript. I enjoy listening to music while studying and spending time with family and friends.
+                        </p>
+                        <figure>
+                            <img src="images/myself.jpeg" alt="" width="150px" height="180px">
+                        </figure>                        
+                    </div>
+
+                    <h3>São Paulo, Brazil</h3>
+
+                    <div class="country">
+                        <figure>
+                            <img src="images/brazil.jpg" alt="" width="160px" height="100px">
+                            <figcaption>Official Flag of Brazil</figcaption>
+                        </figure>
+                        <p>
+                            São Paulo is Brazil's largest city and one of the most diverse in the world. The city is home to iconic landmarks like the São Paulo Museum of Art (MASP) and Ibirapuera Park, and it boasts an impressive culinary scene that reflects its multicultural influences. São Paulo is often called the "financial heart" of Brazil, and its famous Avenida Paulista is a hub for business, art, and entertainment.
+                        </p>
+                    </div>
+                </div>  
+            </section>
+            
+            <section class="card" id="aside">
+                <h2>Web Dev Resources</h2>
+                <div class="resources">
+                    <ul>
+                        <li><a href="https://color.adobe.com/" target="_blank">Adobe Color</a></li>
+                        <li><a href="https://www.myfonts.com/pages/whatthefont" target="_blank">MyFonts</a></li>
+                        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                        <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                        <li><a href="https://www.gimp.org/" target="_blank">Gimp</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                    </ul>
+                </div> 
+            </section>
+        </main>
+        
+        <footer>
+            <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+            <p id="lastModified" class="second-line"></p>
+        </footer>
+    </div>
+
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>

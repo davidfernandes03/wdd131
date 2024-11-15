@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Fernandes</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes | My own Introductory page featuring personal information, links to LinkedIn, I-Learn, a favorite scripture, and an upcoming project. Explore to learn more about my home country and my interests.">
+    <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Links to API and CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css" media="all">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 630px)">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger">☰</button>
+        <nav>
+            <a href="" target="_blank">Home</a>
+            <a href="" target="_blank">Old</a>
+            <a href="" target="_blank">New</a>
+            <a href="" target="_blank">Large</a>
+            <a href="" target="_blank">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="grid-container">
+            <figure>
+                <img src="images/temple-01.avif" alt="">
+                <figcaption>São Paulo - Brazil</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-02.avif" alt="">
+                <figcaption>Rome - Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-03.avif" alt="">
+                <figcaption>Salt Lake City - USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-04.avif" alt="">
+                <figcaption>Lisbon - Portugal</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-05.avif" alt="">
+                <figcaption>Washington D.C. - USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-06.avif" alt="">
+                <figcaption>Tokyo - Japan</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-07.avif" alt="">
+                <figcaption>Oklahoma City - USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-08.avif" alt="">
+                <figcaption>Fortaleza - Brazil</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-09.avif" alt="">
+                <figcaption>Tijuana - Mexico</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+        <p id="lastModified" class="second-line"></p>
+    </footer>
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

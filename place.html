@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Picture Album - David Fernandes</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes | ">
+    <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Links to API and CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <picture>
+                <source srcset="images/brazil-w3-large-img.webp" media="(min-width: 560px)" class="large-img">
+                <img src="images/brazil-w3-img.webp" alt="Arara">
+            </picture>
+          
+            <section class="info-section">
+                <h2>Data</h2>
+                <div class="info-grid">
+                    <div class="info-label">
+                        <label>Area: </label>
+                        <label>Population: </label>
+                        <label>Capital: </label>
+                        <label>Languages: </label>
+                        <label>Currency: </label>
+                        <label>Time Zone: </label>
+                        <label>Calling Code: </label>
+                        <label>Internet TLD: </label>
+                    </div>
+                    <div class="info-value">
+                        <span>Value 1</span>
+                        <span>Value 2</span>
+                        <span>Value 3</span>
+                        <span>Value 4</span>
+                        <span>Value 5</span>
+                        <span>Value 6</span>
+                        <span>Value 7</span>
+                        <span>Value 8</span>
+                    </div>
+                </div>
+            </section>    
+        </main>
+
+        <aside class="sidebar">
+            <section class="info-section">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon" class="icon">
+                <div class="info-grid">
+                    <div class="info-label">
+                        <label>Temperature: </label>
+                        <label>Conditions: </label>
+                        <label>Wind: </label>
+                        <label>Wind Chill: </label>
+                    </div>
+                    <div class="info-value">
+                        <span>Value 1</span>
+                        <span>Value 2</span>
+                        <span>Value 3</span>
+                        <span>Value 4</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+        <p id="lastModified" class="second-line"></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

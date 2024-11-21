@@ -1,0 +1,87 @@
+:root {
+    --border: #e7e700;
+    --text-color: black;
+    --background: #048d10;
+    --spacing: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--background);
+    color: white;
+    padding: var(--spacing);
+    text-align: center;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 10px solid var(--border);
+    border-bottom: 5px solid var(--background);
+}
+
+.icon {
+    width: 140px;
+}
+
+.info-section {
+    text-align: center;
+}
+
+.info-section h2 {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+aside .info-section h2 {
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    padding-bottom: 20px;
+}
+
+.info-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+    gap: 0.3rem;
+}
+
+.info-value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.sidebar {
+    border-top: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+footer {
+    background-color: var(--background);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

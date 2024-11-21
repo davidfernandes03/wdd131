@@ -1,0 +1,82 @@
+/* Media Query para telas maiores */
+@media (min-width: 560px) {
+    body {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    header {
+        padding: 0.8rem;
+    }
+
+    .container {
+        position: relative;
+        height: 80vh;
+    }
+
+    picture img {
+        width: 100%;
+        height: 80vh;
+        border-top: 5px solid var(--border);
+        border-bottom: 0px;
+        margin: auto;
+    }
+
+    .info-section, aside .info-section {
+        background-color: #ffffffc5;
+        color: #000000;
+        padding: 1rem;
+        width: 30%;
+        margin: auto;
+    }
+
+    .info-section {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        transform: translate(-0%, -0%);
+    }
+
+    aside .info-section {
+        position: absolute;
+        top: 95%;
+        left: 97%;
+        transform: translate(-100%, -100%);
+    }
+
+    .info-section h2, aside .info-section h2 {
+        margin: 0rem 0rem 1rem 0rem;
+        background-color: #048d0fb2;
+        color: white;
+        text-align: left;
+        padding: 1rem 1rem 1rem 1.6rem;
+        position: relative;
+        left: -25px;
+        width: 240px;
+    }
+
+    aside .info-section h2::after {
+        content: "⛅";
+        margin-left: 10px;
+    }
+
+    .info-grid {
+        padding-bottom: 0px;
+    }
+
+    .info-label, .info-value {
+        gap: 0.2rem;
+    }
+
+    .sidebar {
+        border-top: 0px solid rgba(0, 0, 0, 0.219);
+    }
+
+    .icon {
+        display: none;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}

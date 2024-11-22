@@ -46,8 +46,8 @@
 
     .info-section h2, aside .info-section h2 {
         margin: 0rem 0rem 1rem 0rem;
-        background-color: #048d0fb2;
-        color: white;
+        background-color: #ecf87fe8;
+        color: var(--heading);
         text-align: left;
         padding: 1rem 1rem 1rem 1.6rem;
         position: relative;

@@ -1,4 +1,4 @@
-/* Media Query para telas maiores */
+/* Media Query for large views */
 @media (min-width: 560px) {
     body {
         max-width: 1000px;

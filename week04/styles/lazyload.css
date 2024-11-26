@@ -1,0 +1,61 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

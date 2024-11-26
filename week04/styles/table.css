@@ -1,0 +1,45 @@
+table {
+    margin: auto;
+    width: 450px;
+    height: 120px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-collapse: collapse;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+#black {
+    background-color: black;
+    border-top: none;
+}
+
+th, td {
+    border: 1px solid rgba(88, 88, 88, 0.096);
+    text-align: center;
+    white-space: pre;
+}
+
+th {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 10px 20px;
+}
+
+td {
+    padding: 5px 20px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(219, 219, 219);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - LazyLoad - David Fernandes</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes">
+    <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Links to API and CSS -->
+    <link rel="stylesheet" href="styles/lazyload.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>LazyLoad</h1>
+    </header>
+    <main>
+        <img src="images/temple-01.avif" alt="Placeholder Image 1" loading="lazy" class="fade-in">
+        <img src="images/temple-02.avif" alt="Placeholder Image 2" loading="lazy" class="fade-in">
+        <img src="images/temple-03.avif" alt="Placeholder Image 3" loading="lazy" class="fade-in">
+        <img src="images/temple-04.avif" alt="Placeholder Image 4" loading="lazy" class="fade-in">
+        <img src="images/temple-05.avif" alt="Placeholder Image 5" loading="lazy" class="fade-in">
+        <img src="images/temple-06.avif" alt="Placeholder Image 6" loading="lazy" class="fade-in">
+    </main>
+    <footer>
+        <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+        <p id="lastModified" class="second-line"></p>
+    </footer>
+
+    <script src="scripts/lazyload.js" defer></script>
+</body>
+</html>

@@ -14,8 +14,16 @@
 
 /* Main Structures */
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: "Merriweather", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* Header */
@@ -84,41 +92,48 @@ main {
     max-width: 1040px;
     margin: 0 auto;
     padding: 1rem;
+    flex: 1;
 }
 
 h2 {
     text-align: center;
-    margin: 30px 0px 15px 0px;
+    margin: 20px 0px 30px 0px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin: auto;
 }
 
 /* Figures */
 
 figure {
-    margin: 0;
+    margin: auto;
     text-align: center;
-    padding: 0px 10px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.288);
+    border: 2px solid rgba(128, 128, 128, 0.411);
+}
+
+figure h3 {
+    padding: 0px 0px 10px 0px;
 }
 
 figure img {
     width: 100%;
     height: auto;
+    margin: auto;
     display: block;
-    margin: 0 auto;
     aspect-ratio: 4 / 3;
     object-fit: fill;
+    padding: 10px 0px 0px 0px;
 }
 
-figcaption {
-    margin-top: 0.2rem;
-    width: 100%;
-    margin: 0.2rem auto 0;
-    text-align: center;
+figure p {
+    font-size: 14px;
+    padding: 2px;
 }
 
 /* Footer */

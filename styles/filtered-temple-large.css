@@ -1,29 +1,29 @@
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+}
+
 @media (min-width: 630px) and (max-width: 840px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hamburger {
-        display: none;
-        font-size: 1.5rem;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        box-shadow: none;
-        background-color: transparent;
-        padding: 0;
-        gap: 0.5rem;
-    }
-
-    nav a {
-        padding: 0.5rem 1rem;
     }
 
     h1 {
@@ -34,28 +34,5 @@
 @media (min-width: 840px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hamburger {
-        display: none;
-        font-size: 1.5rem;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        box-shadow: none;
-        background-color: transparent;
-        padding: 0;
-        gap: 1rem;
-    }
-
-    nav a {
-        padding: 0.5rem 1rem;
     }
 }

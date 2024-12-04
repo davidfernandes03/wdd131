@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes | Review Site | Allows users to see that their feedback has been sent successfully, and also allows them to see the amount of feedback already sent.">
+    <meta name="author" content="David da Rocha Fernandes">
+    <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p class="strong">Total reviews submitted: <span id="review-count">0</span></p>
+        <a href="form.html" id="return-form" class="button">Submit Another Review</a>
+    </main>
+    <footer>
+        <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+        <p id="lastModified" class="second-line"></p>
+    </footer>
+    <script src="scripts/review.js" defer></script>
+</body>
+</html>

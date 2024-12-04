@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | David da Rocha Fernandes | Product Review Site | Users can submit reviews for products they have used, share their experiences, and rate products based on quality and features.">
+    <meta name="author" content="David da Rocha Fernandes">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="review-form" action="review.html" method="get">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <div class="levels">
+                        <label for="star1">&#9734;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="levels">
+                        <label for="star2">&#9734;&#9734;</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                    </div>
+                    <div class="levels">
+                        <label for="star3">&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                    </div>
+                    <div class="levels">
+                        <label for="star4">&#9734;&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                    </div>
+                    <div class="levels">
+                        <label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star5" name="rating" value="5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation_date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Which features did you find useful in the product? <small>(Check all that apply)</small></label>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="durability" name="features" value="Durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                        <label for="ease-of-use">Ease of Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        <label for="design">Design</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Written Review <small>(Optional)</small></label>
+                <textarea id="review" name="review" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Your Name <small>(Optional)</small></label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Post Review</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+        <p id="lastModified" class="second-line"></p>
+    </footer>
+
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>

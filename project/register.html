@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta name="description" content="Create your account to access tailored resources and learn programming languages.">
+    <meta name="author" content="David da Rocha Fernandes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/code-guide.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Register</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="code-guide.html">Home</a></li>
+                <li><a href="languages.html">Languages and Resources</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Create Your Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Area of Interest</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an area</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="Game Development">Game Development</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions</label>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="btn-flex">
+                    <button type="submit" class="register-btn">Register</button>
+                </div>
+                <p class="success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil</p>
+        <p id="lastModified" class="second-line"></p>
+    </footer>
+
+    <script src="scripts/register.js" defer></script>
+</body>
+</html>
